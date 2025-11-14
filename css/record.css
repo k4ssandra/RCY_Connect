@@ -1,0 +1,415 @@
+/* record.css - Updated with events-style banner and proper header/footer */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  background-color: #aa2132;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo img {
+  height: 48px;
+  width: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  background: rgba(255,255,255,0.15);
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(168,33,50,0.12);
+}
+
+.search .srch {
+  width: 260px;
+  height: 42px;
+  background: #ffffff;
+  border: 0;
+  color: #222;
+  font-size: 15px;
+  padding: 0 14px;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search .srch::placeholder {
+  color: #8a8a8a;
+  opacity: 1;
+}
+
+.search .srch:focus {
+  box-shadow: 0 0 0 3px rgba(170,33,50,0.12);
+}
+
+.search-btn {
+  height: 42px;
+  padding: 0 16px;
+  border: 0;
+  background: #dc374a;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.15s ease, transform 0.08s ease;
+}
+
+.search-btn:hover {
+  background: #8f1b28;
+}
+
+.search-btn:active {
+  transform: translateY(1px);
+}
+
+.search-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(170,33,50,0.18);
+}
+
+.notification {
+  position: relative;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification .bell-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.notification:hover .bell-icon {
+  transform: scale(1.1);
+}
+
+.notification span {
+  position: absolute;
+  top: -2px;
+  right: -4px;
+  background: gold;
+  color: black;
+  border-radius: 50%;
+  padding: 1px 6px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.profile {
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.profile:hover {
+  transform: scale(1.05);
+}
+
+.profile:active {
+  transform: scale(0.95);
+}
+
+.profile img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: block;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+main {
+  padding-top: 70px; /* No gap between header and banner */
+}
+
+/* EVENTS-STYLE BANNER */
+.records-hero {
+  background: linear-gradient(90deg, rgba(200,16,46,0.92), rgba(162,9,30,0.9)),
+              url('https://images.unsplash.com/photo-1551190822-a9333d879b1f?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&s=') center / cover no-repeat;
+  color: white;
+  padding: 80px 6% 60px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+.records-hero h1 {
+  font-size: 44px;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+.records-hero p {
+  font-size: 18px;
+  opacity: 0.95;
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Legend section */
+.records-legend {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.records-legend span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: white;
+}
+
+.container {
+  width: 84%;
+  margin: 40px auto 80px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.panel {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.panel h2 {
+  color: #c8102e;
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.panel p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.participation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.participation-table th, .participation-table td {
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.participation-table th {
+  background: #f8f8f8;
+  color: #333;
+  font-weight: 600;
+  border-bottom: 2px solid #c8102e;
+}
+
+.participation-table tr:hover {
+  background: #fafafa;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status.completed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.joined {
+  background: #cce5ff;
+  color: #004085;
+}
+
+.status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.attended {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.status.missed {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+footer {
+  background: #101432;
+  color: #ddd;
+  padding: 25px 6%;
+  text-align: center;
+}
+
+footer h4 {
+  color: white;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+footer p {
+  margin-bottom: 6px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #888;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    padding: 0.6rem 1rem;
+  }
+  
+  .profile img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .records-hero {
+    padding: 60px 6%;
+  }
+
+  .records-hero h1 {
+    font-size: 32px;
+  }
+
+  .records-hero p {
+    font-size: 16px;
+  }
+
+  .records-legend {
+    gap: 15px;
+  }
+
+  .records-legend span {
+    font-size: 12px;
+  }
+
+  .container {
+    width: 95%;
+    margin: 20px auto 40px;
+  }
+
+  .panel {
+    padding: 20px;
+  }
+
+  .participation-table th, .participation-table td {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .panel h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search .srch {
+    width: 150px;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .profile img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .records-hero {
+    padding: 50px 4% 40px;
+  }
+
+  .records-legend {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

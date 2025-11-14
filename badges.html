@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RCY Badges</title>
+  <link rel="stylesheet" href="css/badges.css">
+</head>
+<body>
+  <header>
+    <div class="left-section">
+      <div class="logo">
+        <img src="img/logo.png" alt="RCY Logo">
+      </div>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="events.html">Events</a>
+        <a href="record.html">Records</a>
+        <a href="tips.html">Tips</a>
+        <a href="prep.html">Prep</a>
+        <a href="badges.html" class="active">Badges</a>
+        <a href="impact.html">Impact</a>
+      </nav>
+    </div>
+    <div class="right-section">
+      <form class="search" role="search" action="#" method="get" aria-label="Site search">
+        <input class="srch" type="search" name="q" placeholder="Search RCY Connect..." aria-label="Search query">
+        <button class="search-btn" type="submit" aria-label="Search">Search</button>
+      </form>
+      <div class="notification" title="Notifications" aria-label="Notifications">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bell-icon">
+          <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/>
+          <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+        </svg>
+        <span>3</span>
+      </div>
+      <div class="profile">
+        <a href="profile.html"><img src="img/user.jpg" alt="User"></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="badges-hero">
+      <h1>Volunteer Badges</h1>
+      <p>Celebrating your achievements and dedication to service. Track your progress and unlock new levels of impact.</p>
+      
+      <div class="badges-legend">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C8102E" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+          </svg> 
+          Earned
+        </span>
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFA500" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+          </svg> 
+          In Progress
+        </span>
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#CCCCCC" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+          </svg> 
+          Locked
+        </span>
+      </div>
+    </div>
+
+    <div class="badges-container">
+      <div class="badges-header">
+        <div class="badge-stats">
+          <div class="stat">
+            <span class="count">12</span>
+            <span class="label">Badges Earned</span>
+          </div>
+          <div class="stat">
+            <span class="count">5</span>
+            <span class="label">In Progress</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="badges-grid">
+        <!-- Badge 1 -->
+        <div class="badge-card earned">
+          <div class="badge-icon first-aid">
+            <span>🩹</span>
+          </div>
+          <div class="badge-content">
+            <h3>First Aid Expert</h3>
+            <p>Completed advanced first aid training and demonstrated proficiency in emergency response</p>
+            <div class="badge-meta">
+              <span class="date-earned">Earned: Oct 15, 2024</span>
+              <span class="badge-level">Advanced</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Badge 2 -->
+        <div class="badge-card earned">
+          <div class="badge-icon blood-donor">
+            <span>💉</span>
+          </div>
+          <div class="badge-content">
+            <h3>Blood Donor Hero</h3>
+            <p>Donated blood 3+ times and encouraged others to participate in blood drives</p>
+            <div class="badge-meta">
+              <span class="date-earned">Earned: Sep 28, 2024</span>
+              <span class="badge-level">Community</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Badge 3 -->
+        <div class="badge-card earned">
+          <div class="badge-icon leadership">
+            <span>⭐</span>
+          </div>
+          <div class="badge-content">
+            <h3>Youth Leader</h3>
+            <p>Led successful campus events and mentored new volunteers</p>
+            <div class="badge-meta">
+              <span class="date-earned">Earned: Aug 12, 2024</span>
+              <span class="badge-level">Leadership</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Badge 4 -->
+        <div class="badge-card earned">
+          <div class="badge-icon community">
+            <span>🤝</span>
+          </div>
+          <div class="badge-content">
+            <h3>Community Builder</h3>
+            <p>Organized 5+ community outreach programs with significant impact</p>
+            <div class="badge-meta">
+              <span class="date-earned">Earned: Jul 5, 2024</span>
+              <span class="badge-level">Service</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Badge 5 - In Progress -->
+        <div class="badge-card progress">
+          <div class="badge-icon cpr">
+            <span>❤️</span>
+          </div>
+          <div class="badge-content">
+            <h3>CPR Master</h3>
+            <p>Complete CPR certification and demonstrate proficiency in emergency scenarios</p>
+            <div class="badge-meta">
+              <span class="progress-text">2 of 3 requirements completed</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 66%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Badge 6 - Locked -->
+        <div class="badge-card locked">
+          <div class="badge-icon disaster">
+            <span>🚨</span>
+          </div>
+          <div class="badge-content">
+            <h3>Disaster Response</h3>
+            <p>Participate in disaster preparedness training and emergency drills</p>
+            <div class="badge-meta">
+              <span class="locked-text">Complete 2 more events to unlock</span>
+            </div>
+          </div>
+          <div class="lock-overlay">🔒</div>
+        </div>
+      </div>
+
+      <div class="achievements-section">
+        <h2>Recent Achievements</h2>
+        <div class="achievements-list">
+          <div class="achievement">
+            <span class="achievement-icon">🎉</span>
+            <div class="achievement-info">
+              <strong>First Aid Expert Badge Earned!</strong>
+              <span>October 15, 2024</span>
+            </div>
+          </div>
+          <div class="achievement">
+            <span class="achievement-icon">🎉</span>
+            <div class="achievement-info">
+              <strong>Blood Donor Level Up!</strong>
+              <span>September 28, 2024</span>
+            </div>
+          </div>
+          <div class="achievement">
+            <span class="achievement-icon">🎉</span>
+            <div class="achievement-info">
+              <strong>Community Builder Badge Unlocked</strong>
+              <span>July 5, 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <h4>RCY Connect</h4>
+    <p>Working together to strengthen communities through youth-led service and compassion.</p>
+    <p><i>Carlos Hilado Memorial State College - Alijis Campus Clinic</i></p>
+    <div class="copyright">
+      © 2025 RCY Connect. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

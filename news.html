@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RCY News</title>
+  <link rel="stylesheet" href="css/news.css">
+</head>
+<body>
+  <header>
+    <div class="left-section">
+      <div class="logo">
+        <img src="img/logo.png" alt="RCY Logo">
+      </div>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="news.html" class="active">News</a>
+        <a href="events.html">Events</a>
+        <a href="record.html">Records</a>
+        <a href="tips.html">Tips</a>
+        <a href="prep.html">Prep</a>
+        <a href="badges.html">Badges</a>
+        <a href="impact.html">Impact</a>
+      </nav>
+    </div>
+    <div class="right-section">
+      <form class="search" role="search" action="#" method="get" aria-label="Site search">
+        <input class="srch" type="search" name="q" placeholder="Search RCY Connect..." aria-label="Search query">
+        <button class="search-btn" type="submit" aria-label="Search">Search</button>
+      </form>
+      <div class="notification" title="Notifications" aria-label="Notifications">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bell-icon">
+          <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/>
+          <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+        </svg>
+        <span>3</span>
+      </div>
+      <div class="profile">
+        <a href="profile.html"><img src="img/user.jpg" alt="User"></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="news-hero">
+      <h1>Announcements & Alerts</h1>
+      <p>Stay updated with the latest news, alerts, and updates from RCY at CHMSU.</p>
+      
+      <div class="news-legend">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+          </svg> 
+          General Announcement
+        </span>
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffc107" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+          </svg> 
+          Alert
+        </span>
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#dc3545" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+          </svg> 
+          Emergency
+        </span>
+      </div>
+
+      <div class="filters">
+        <button class="filter-btn active" data-type="all">All</button>
+        <button class="filter-btn" data-type="general">General</button>
+        <button class="filter-btn" data-type="alert">Alert</button>
+        <button class="filter-btn" data-type="emergency">Emergency</button>
+      </div>
+    </div>
+
+    <div class="news-container">
+      <div class="announcement-card" data-type="alert">
+        <img src="img/typhoon.jpg" alt="Typhoon Preparedness">
+        <div class="card-content">
+          <span class="badge alert">Alert</span>
+          <h3>Typhoon Preparedness Drill</h3>
+          <p>Due to incoming weather, all RCY members must participate in the CHMSU emergency drill on October 12th at 9 AM. Meet at the main gate. Prepare kits and stay safe.</p>
+          <small>Posted: Oct 8, 2023 by RCY Admin</small>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="announcement-card" data-type="general">
+        <img src="img/officers.jpg" alt="Officer Nominations">
+        <div class="card-content">
+          <span class="badge general">General</span>
+          <h3>Officer Nominations Open</h3>
+          <p>Submit nominations for RCY officers by October 20th via email to rcy@chmsu.edu.ph. Elections on October 25th. Help shape our club's future!</p>
+          <small>Posted: Oct 5, 2023 by RCY Admin</small>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="announcement-card" data-type="alert">
+        <img src="img/blood.jpg" alt="Blood Drive">
+        <div class="card-content">
+          <span class="badge alert">Alert</span>
+          <h3>Blood Drive Extension</h3>
+          <p>High demand! Registration for the CHMSU Blood Drive is extended to October 22nd. Donate at the clinic from 8 AM-4 PM and save lives.</p>
+          <small>Posted: Oct 3, 2023 by RCY Admin</small>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="announcement-card" data-type="general">
+        <img src="img/guestt.jpg" alt="Guest Speaker">
+        <div class="card-content">
+          <span class="badge general">General</span>
+          <h3>Guest Speaker Series: Mental Health</h3>
+          <p>Join Dr. Reyes for a talk on student mental health on October 28th in the auditorium. Free for all CHMSU students – learn coping strategies.</p>
+          <small>Posted: Sep 30, 2023 by RCY Admin</small>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="announcement-card" data-type="emergency">
+        <img src="img/lockdown.jpg" alt="Campus Lockdown">
+        <div class="card-content">
+          <span class="badge emergency">Emergency</span>
+          <h3>Immediate Action Required: Campus Lockdown</h3>
+          <p>Due to a reported incident, CHMSU is under lockdown. RCY members, follow protocol and assist in safe zones. Update via app.</p>
+          <small>Posted: Oct 10, 2023 by RCY Admin</small>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="announcement-card" data-type="general">
+        <img src="img/volunteers.jpg" alt="Volunteer Recognition">
+        <div class="card-content">
+          <span class="badge general">General</span>
+          <h3>Volunteer Recognition Awards</h3>
+          <p>Congrats to our top volunteers! Awards ceremony on November 5th. Your dedication inspires us all at CHMSU.</p>
+          <small>Posted: Sep 25, 2023 by RCY Admin</small>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <button class="page-btn">Previous</button>
+      <span>Page 1 of 3</span>
+      <button class="page-btn">Next</button>
+    </div>
+  </main>
+
+  <footer>
+    <h4>RCY Connect</h4>
+    <p>Working together to strengthen communities through youth-led service and compassion.</p>
+    <p><i>Carlos Hilado Memorial State College - Alijis Campus Clinic</i></p>
+    <div class="copyright">
+      © 2025 RCY Connect. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

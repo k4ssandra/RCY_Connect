@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RCY Profile</title>
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <header>
+    <div class="left-section">
+      <div class="logo">
+        <img src="img/logo.png" alt="RCY Logo">
+      </div>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="events.html">Events</a>
+        <a href="record.html">Records</a>
+        <a href="tips.html">Tips</a>
+        <a href="prep.html">Prep</a>
+        <a href="badges.html">Badges</a>
+        <a href="impact.html">Impact</a>
+      </nav>
+    </div>
+    <div class="right-section">
+      <form class="search" role="search" action="#" method="get" aria-label="Site search">
+        <input class="srch" type="search" name="q" placeholder="Search RCY Connect..." aria-label="Search query">
+        <button class="search-btn" type="submit" aria-label="Search">Search</button>
+      </form>
+      <div class="notification" title="Notifications" aria-label="Notifications">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bell-icon">
+          <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/>
+          <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+        </svg>
+        <span>3</span>
+      </div>
+      <div class="profile">
+        <a href="profile.html"><img src="img/user.jpg" alt="User"></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="profile-hero">
+      <h1>My Profile</h1>
+      <p>Manage your personal information, track your volunteer journey, and update your preferences.</p>
+      
+      <div class="profile-legend">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C8102E" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+          </svg> 
+          Personal Info
+        </span>
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+          </svg> 
+          Campus Details
+        </span>
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF9800" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+          </svg> 
+          Emergency Contact
+        </span>
+      </div>
+    </div>
+
+    <div class="profile-container">
+      <div class="profile-header">
+        <div class="profile-avatar">
+          <img src="https://via.placeholder.com/120" alt="Profile Picture">
+          <button class="edit-avatar-btn" title="Change Photo">📷</button>
+        </div>
+        <div class="profile-info">
+          <h1>Maria Santos</h1>
+          <p class="role">RCY Volunteer</p>
+          <p class="member-since">Member since September 2022</p>
+        </div>
+        <button class="edit-profile-btn" id="editProfileBtn">Edit Profile</button>
+      </div>
+
+      <div class="profile-content">
+        <div class="profile-section">
+          <h2>Personal Information</h2>
+          <div class="info-grid">
+            <div class="info-item">
+              <label>Full Name</label>
+              <div class="info-value" id="nameValue">Maria Santos</div>
+              <input type="text" class="info-edit" id="nameEdit" value="Maria Santos" style="display: none;">
+            </div>
+            <div class="info-item">
+              <label>Email Address</label>
+              <div class="info-value" id="emailValue">maria.santos@chmsc.edu.ph</div>
+              <input type="email" class="info-edit" id="emailEdit" value="maria.santos@chmsc.edu.ph" style="display: none;">
+            </div>
+            <div class="info-item">
+              <label>Phone Number</label>
+              <div class="info-value" id="phoneValue">+63 912 345 6789</div>
+              <input type="tel" class="info-edit" id="phoneEdit" value="+63 912 345 6789" style="display: none;">
+            </div>
+            <div class="info-item">
+              <label>Student ID</label>
+              <div class="info-value" id="idValue">2022-12345</div>
+              <input type="text" class="info-edit" id="idEdit" value="2022-12345" style="display: none;">
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-section">
+          <h2>Campus Information</h2>
+          <div class="info-grid">
+            <div class="info-item">
+              <label>Campus</label>
+              <div class="info-value">Alijis Campus</div>
+            </div>
+            <div class="info-item">
+              <label>Course & Year</label>
+              <div class="info-value" id="courseValue">BS Nursing - 3rd Year</div>
+              <input type="text" class="info-edit" id="courseEdit" value="BS Nursing - 3rd Year" style="display: none;">
+            </div>
+            <div class="info-item">
+              <label>Role</label>
+              <div class="info-value role-badge">Volunteer</div>
+            </div>
+            <div class="info-item">
+              <label>RCY Chapter</label>
+              <div class="info-value">CHMSC-Alijis Red Cross Youth</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-section">
+          <h2>Emergency Contact</h2>
+          <div class="info-grid">
+            <div class="info-item">
+              <label>Contact Person</label>
+              <div class="info-value" id="emergencyNameValue">Juan Santos</div>
+              <input type="text" class="info-edit" id="emergencyNameEdit" value="Juan Santos" style="display: none;">
+            </div>
+            <div class="info-item">
+              <label>Relationship</label>
+              <div class="info-value" id="relationshipValue">Father</div>
+              <input type="text" class="info-edit" id="relationshipEdit" value="Father" style="display: none;">
+            </div>
+            <div class="info-item">
+              <label>Emergency Phone</label>
+              <div class="info-value" id="emergencyPhoneValue">+63 923 456 7890</div>
+              <input type="tel" class="info-edit" id="emergencyPhoneEdit" value="+63 923 456 7890" style="display: none;">
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-section">
+          <h2>Volunteer Summary</h2>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon">🩸</div>
+              <div class="stat-info">
+                <span class="stat-number">5</span>
+                <span class="stat-label">Blood Donations</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">⏱️</div>
+              <div class="stat-info">
+                <span class="stat-number">128</span>
+                <span class="stat-label">Volunteer Hours</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">🎓</div>
+              <div class="stat-info">
+                <span class="stat-number">12</span>
+                <span class="stat-label">Trainings Completed</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">⭐</div>
+              <div class="stat-info">
+                <span class="stat-number">8</span>
+                <span class="stat-label">Badges Earned</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-actions">
+          <button class="save-btn" id="saveBtn" style="display: none;">Save Changes</button>
+          <button class="cancel-btn" id="cancelBtn" style="display: none;">Cancel</button>
+          <button class="logout-btn" onclick="logout()">Log Out</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <h4>RCY Connect</h4>
+    <p>Working together to strengthen communities through youth-led service and compassion.</p>
+    <p><i>Carlos Hilado Memorial State College - Alijis Campus Clinic</i></p>
+    <div class="copyright">
+      © 2025 RCY Connect. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // Profile Edit Functionality
+    const editProfileBtn = document.getElementById('editProfileBtn');
+    const saveBtn = document.getElementById('saveBtn');
+    const cancelBtn = document.getElementById('cancelBtn');
+    const profileContent = document.querySelector('.profile-content');
+
+    editProfileBtn.addEventListener('click', () => {
+      profileContent.classList.add('edit-mode');
+      editProfileBtn.style.display = 'none';
+      saveBtn.style.display = 'block';
+      cancelBtn.style.display = 'block';
+    });
+
+    cancelBtn.addEventListener('click', () => {
+      profileContent.classList.remove('edit-mode');
+      editProfileBtn.style.display = 'block';
+      saveBtn.style.display = 'none';
+      cancelBtn.style.display = 'none';
+      
+      // Reset form values
+      document.getElementById('nameEdit').value = document.getElementById('nameValue').textContent;
+      document.getElementById('emailEdit').value = document.getElementById('emailValue').textContent;
+      document.getElementById('phoneEdit').value = document.getElementById('phoneValue').textContent;
+      document.getElementById('idEdit').value = document.getElementById('idValue').textContent;
+      document.getElementById('courseEdit').value = document.getElementById('courseValue').textContent;
+      document.getElementById('emergencyNameEdit').value = document.getElementById('emergencyNameValue').textContent;
+      document.getElementById('relationshipEdit').value = document.getElementById('relationshipValue').textContent;
+      document.getElementById('emergencyPhoneEdit').value = document.getElementById('emergencyPhoneValue').textContent;
+    });
+
+    saveBtn.addEventListener('click', () => {
+      // Update values
+      document.getElementById('nameValue').textContent = document.getElementById('nameEdit').value;
+      document.getElementById('emailValue').textContent = document.getElementById('emailEdit').value;
+      document.getElementById('phoneValue').textContent = document.getElementById('phoneEdit').value;
+      document.getElementById('idValue').textContent = document.getElementById('idEdit').value;
+      document.getElementById('courseValue').textContent = document.getElementById('courseEdit').value;
+      document.getElementById('emergencyNameValue').textContent = document.getElementById('emergencyNameEdit').value;
+      document.getElementById('relationshipValue').textContent = document.getElementById('relationshipEdit').value;
+      document.getElementById('emergencyPhoneValue').textContent = document.getElementById('emergencyPhoneEdit').value;
+
+      profileContent.classList.remove('edit-mode');
+      editProfileBtn.style.display = 'block';
+      saveBtn.style.display = 'none';
+      cancelBtn.style.display = 'none';
+      
+      alert('Profile updated successfully!');
+    });
+
+    function logout() {
+      if (confirm('Are you sure you want to log out?')) {
+        // Redirect to login page
+        window.location.href = 'login.html';
+      }
+    }
+  </script>
+</body>
+</html>
